@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Fique Milionário!</title>
+</head>
+<!--comentário-->
+<body>
+    <main>
+
+        <section>
+            <h1 class="entrada" id="cabeçalho">Você vai ser rico!</h1>
+            <input type="text" id="inutil" class="escrita-longa" placeholder="Isso é enfeite, Aperta o botão!">
+            <input type="button" class="botao" id="Dinheiro" value="Aperte para ganhar dinheiro!!" onClick="Botao(i)" onClick="aumentar()">
+        </section>
+    <br>
+        <section>
+            <h1 class="entrada" id="cabeçalho">Par ou ímpar</h1>
+            <input type="number" class="escrita" id="numero" placeholder="Digite um número">
+            <input type="button" class="botao" id="botao" value="Ok" onClick="Botao1()">
+        </section>
+
+        <section>
+             <h1 class="entrada" id="cabeçalho">Olá!</h1>
+             <input type="text" id="nome" class="escrita" placeholder="Digite seu nome aqui!">
+             <input type="button" class="botao" id="mostrarNome" value="Ok" onClick="Nome()">
+        </section>
+    <br>
+        <section>
+            <h1 class="entrada" id="cabeçalho">Gerador de números aleatórios!</h1>
+            <input type="number" class="escrita" style="width: 172px" id="min" placeholder="Digite o valor mínimo aqui!">
+            <input type="number" class="escrita" style="width: 172px" id="max" placeholder="Digite o valor máximo aqui!">
+            <br>
+            <br>
+            <input type="number" style="width: 202px; margin-left: 60px;" class="escrita" id="quantia" placeholder="Digite quantos números deseja!">
+            <input type="button" class="botao" id="" value="Gerar" onClick="Aleatorio()">
+            <br>
+            <h3 class="entrada" id="cabeçalhoN"></h3>
+        </section>
+    <br>
+        <section>
+            <h1 class="entrada" id="Etariedade">Faixa Etária</h1>
+            <input type="text" class="escrita" id="idade" placeholder="Digite sua idade">
+            <input type="button" class="botao" id="botao-idade" value="Ok" onClick="Idade()">
+            <br>
+            <h4 class= "entrada" id="idade-resultado"></h4>
+        </section>
+        <section> 
+            <h1 class="entrada" id="Mega">Mega-Sena</h1>
+            <input type="text" class="escrita" id="jogos" placeholder="Nº de jogos">
+            <input type="button" class="botao" id="gerar-jogos" value="Gerar" onClick="">
+        </section>
+    </main>
+</body>
+</html>

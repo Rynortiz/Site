@@ -1,0 +1,39 @@
+body {
+    background: #457B9D
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(219, 221, 230);
+    border-radius: 15px;
+}
+.entrada {
+    font-family: 'Roboto Slab', serif;
+    color: #E63946;
+    text-align: center;
+}
+.botao {
+    background-color: #1D3557;
+    font-family: 'Oswald', sans-serif;
+    color:#F1FAEE
+}
+.escrita {
+    color:#457B9D;
+    font-family: 'Oswald', sans-serif;
+    background-color: ghostwhite;
+    text-align: center;
+}
+.escrita-longa {
+    color:#457B9D;
+    font-family: 'Oswald', sans-serif;
+    background-color: ghostwhite;
+    text-align: center;
+    width: 170px;
+}
