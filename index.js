@@ -53,15 +53,12 @@ function Idade () {
     else {document.getElementById("idade-resultado").innerHTML= "Idade inválida!"};
 };
 function Sena () {
-    let verificar
-    let numero = [];
-  for (let i = 0; i < 6; i++) {
-  verificar.push(Math.floor(Math.random()*60)+1);
-    for (let i = 0; i < verificar.length; i++) {
-        if (numero[i] != verificar)
+    let nJogos = parseInt(document.getElementById("jogos").value)
+    let numeros = [];
+    for (let i = 0 ; i < nJogos; i++) {
+        numeros.push("jogo" + i)
     }
-    
+    document.getElementById("saida").innerHTML = numeros
+}
 
-  }
-  console.log(numero);
-};
+// Math.floor(Math.random()*60)+1;

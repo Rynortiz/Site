@@ -20,9 +20,13 @@ section {
     text-align: center;
 }
 .botao {
+    cursor: pointer;
     background-color: #1D3557;
     font-family: 'Oswald', sans-serif;
     color:#F1FAEE
+}
+.botao:hover {
+    background-color: #345c96
 }
 .escrita {
     color:#457B9D;
@@ -30,10 +34,16 @@ section {
     background-color: ghostwhite;
     text-align: center;
 }
+.escrita:hover {
+    background-color:rgb(227, 227, 236)
+}
 .escrita-longa {
     color:#457B9D;
     font-family: 'Oswald', sans-serif;
     background-color: ghostwhite;
     text-align: center;
     width: 170px;
+}
+.escrita-longa:hover {
+    background-color:rgb(227, 227, 236)
 }
