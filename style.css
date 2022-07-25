@@ -1,6 +1,12 @@
 body {
     background: #457B9D
 }
+header {
+    display: flex;
+    justify-content: space-around;
+    color: #E63946;
+    text-decoration: none;
+}
 
 main {
     display: flex;

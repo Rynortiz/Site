@@ -1,3 +1,7 @@
+function funcaoOrdena( x, y )
+{
+ return parseInt( x ) - parseInt( y );
+}
 function aumentar () {
     var i = parseInt(+ 100);
     return i;
@@ -55,10 +59,31 @@ function Idade () {
 function Sena () {
     let nJogos = parseInt(document.getElementById("jogos").value)
     let numeros = [];
+    let resultado = [];
+    let x = [];
     for (let i = 0 ; i < nJogos; i++) {
-        numeros.push("jogo" + i)
+        numeros.push([]);
+        for (let b = 0 ; b < 6; b++) {
+            x.push(Math.floor(Math.random() * 60) + 1);
+                while (i--) {
+                    ranNums.push(nums[j]);
+                    nums.splice(j,1);
+            }
+                numeros[0 + i][0 + b] = (Math.floor(Math.random()*60) + 1)
+            };
+        numeros[0 + i].sort(funcaoOrdena);
+        resultado.push(numeros[0+i].join("-"))
+        document.getElementById("saida").innerHTML = resultado.join("<br>");
     }
-    document.getElementById("saida").innerHTML = numeros
-}
+};
 
-// Math.floor(Math.random()*60)+1;
+// var nums = [1,2,3,4,5,6,7,8,9,10],
+// ranNums = [],
+// i = nums.length,
+// j = 0;
+
+// while (i--) {
+// j = Math.floor(Math.random() * (i+1));
+// ranNums.push(nums[j]);
+// nums.splice(j,1);
+// }
