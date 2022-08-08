@@ -34,7 +34,7 @@ function Aleatorio () {
         todos.push(Gerador());
     }
     let resposta = todos.join(" - ");
-    document.getElementById("cabeçalhoN").innerHTML= "Esses são seu números: " + resposta;
+    document.getElementById("cabeçalhoN").innerHTML= "Esses são seus números: " + resposta;
 };
 function Gerador () {
     let min =parseInt (document.getElementById("min").value);
@@ -51,39 +51,36 @@ function Idade () {
         && idade < 60) {
         document.getElementById("idade-resultado").innerHTML= "Você é maior de idade";
     }
-    else if (idade >= 60){
+    else if (idade >= 60
+        && idade < 120){
         document.getElementById("idade-resultado").innerHTML= "Você ainda tem dúvida???";
+    }
+    else if (idade >= 120) {
+        document.getElementById("idade-resultado").innerHTML= "Como...?";
     }
     else {document.getElementById("idade-resultado").innerHTML= "Idade inválida!"};
 };
-function Sena () {
-    let nJogos = parseInt(document.getElementById("jogos").value)
+function Sena(){
+    let max = 60;
     let numeros = [];
-    let resultado = [];
-    let x = [];
-    for (let i = 0 ; i < nJogos; i++) {
-        numeros.push([]);
-        for (let b = 0 ; b < 6; b++) {
-            x.push(Math.floor(Math.random() * 60) + 1);
-                while (i--) {
-                    ranNums.push(nums[j]);
-                    nums.splice(j,1);
-            }
-                numeros[0 + i][0 + b] = (Math.floor(Math.random()*60) + 1)
-            };
-        numeros[0 + i].sort(funcaoOrdena);
-        resultado.push(numeros[0+i].join("-"))
-        document.getElementById("saida").innerHTML = resultado.join("<br>");
-    }
+    for (let i = 0;i < 6 ; i++){
+        let temp = (Math.floor(Math.random() * max) + 1);
+        if (numeros.indexOf(temp) == - 1){
+            numeros.push(temp);
+        }
+        else {
+            i--;
+        };
+    };
+    numeros.sort((a,b) => a-b);
+    let text = numeros.join(" - ");
+    return text;
 };
-
-// var nums = [1,2,3,4,5,6,7,8,9,10],
-// ranNums = [],
-// i = nums.length,
-// j = 0;
-
-// while (i--) {
-// j = Math.floor(Math.random() * (i+1));
-// ranNums.push(nums[j]);
-// nums.splice(j,1);
-// }
+function Quantia(){
+    let jogos = [];
+    let quantia = parseInt(document.getElementById("jogos").value);
+    for (let i = 0; i < quantia; i++) {
+        jogos.push(Sena());
+    };
+    document.getElementById("saida").innerHTML = jogos.join("<br>");
+};
