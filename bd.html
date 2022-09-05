@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js"></script>
+    <script src="bd.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Site do Rynortiz</title>
 </head>
@@ -13,5 +13,14 @@
         <a href="projetos.html">Projetos</a>
         <a href="bd.html">Banco</a>
     </header>
+    <form>
+        <input type="text" id="nome" placeholder="Nome Completo">
+    </br>
+        <input type="text" id="endereco" placeholder="Endereço">
+    </br>    
+        <input type="number" id="conta" placeholder="Conta">
+    </br></br>
+        <input type="button" value="Enviar" id="submit" onclick="salvarCliente()"> 
+    </form>
 </body>
 </html>
